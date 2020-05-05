@@ -75,7 +75,7 @@ def mazeGen(blocks,x,y):
         d.append((x,y-1))
     if y != len(blocks)-1:
         d.append((x,y+1))
-    #random.shuffle(d)
+    random.shuffle(d)
 
     #Iterate over direction list, skip if the block has been visited, recursivey call on all new blocks
     for (xdir,ydir) in d:
